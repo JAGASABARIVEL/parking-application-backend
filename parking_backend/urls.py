@@ -26,6 +26,7 @@ from users.views import UserViewSet, DriverVehicleViewSet
 from parking.views import ParkingSpaceViewSet
 from bookings.views import BookingViewSet, ReviewViewSet
 from payments.views import PaymentViewSet
+from disputes.views import DisputeViewSet
 
 # Create router and register viewsets
 router = DefaultRouter()
@@ -33,6 +34,7 @@ router.register(r'parking-spaces', ParkingSpaceViewSet, basename='parking-space'
 router.register(r'bookings', BookingViewSet, basename='booking')
 router.register(r'vehicles', DriverVehicleViewSet, basename='vehicle')
 router.register(r'reviews', ReviewViewSet, basename='review')
+router.register(r'disputes', DisputeViewSet, basename='disputes')
 
 urlpatterns = [
     # Admin

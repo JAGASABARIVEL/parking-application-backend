@@ -832,3 +832,33 @@ django.db.utils.ProgrammingError: column payments_payment.has_commission_applied
 LINE 1: ...t"."created_at", "payments_payment"."updated_at", "payments_...
                                                              ^
 
+INFO 2025-10-29 06:59:12,399 autoreload 1540718 124497293746304 Watching for file changes with StatReloader
+INFO 2025-10-29 06:59:25,732 autoreload 1541016 136016382599296 Watching for file changes with StatReloader
+WARNING 2025-10-29 07:00:32,807 log 1541016 136016156423872 Unauthorized: /api/v1/parking-spaces/1/
+WARNING 2025-10-29 07:00:37,673 log 1541016 136016156423872 Unauthorized: /api/v1/parking-spaces/2/
+WARNING 2025-10-29 07:00:44,588 log 1541016 136016156423872 Unauthorized: /api/v1/parking-spaces/2/
+WARNING 2025-10-29 07:01:36,253 log 1541016 136016156423872 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-29 07:01:36,255 log 1541016 136016139638464 Unauthorized: /api/v1/bookings/my_bookings/
+INFO 2025-10-29 07:53:10,511 autoreload 1541016 136016382599296 /home/sri-balamurugan-indane-gas-servi/parking-application-backend/payments/models.py changed, reloading.
+INFO 2025-10-29 07:53:11,426 autoreload 1598851 139475397394560 Watching for file changes with StatReloader
+INFO 2025-10-29 07:54:51,940 autoreload 1598851 139475397394560 /home/sri-balamurugan-indane-gas-servi/parking-application-backend/payments/views.py changed, reloading.
+INFO 2025-10-29 07:54:52,870 autoreload 1600669 136194940678272 Watching for file changes with StatReloader
+INFO 2025-10-29 07:56:15,972 autoreload 1600669 136194940678272 /home/sri-balamurugan-indane-gas-servi/parking-application-backend/payments/serializers.py changed, reloading.
+INFO 2025-10-29 07:56:16,709 autoreload 1602129 124701111472256 Watching for file changes with StatReloader
+INFO 2025-10-29 07:57:16,178 autoreload 1602129 124701111472256 /home/sri-balamurugan-indane-gas-servi/parking-application-backend/payments/serializers.py changed, reloading.
+INFO 2025-10-29 07:57:16,659 autoreload 1603188 130209287479424 Watching for file changes with StatReloader
+INFO 2025-10-29 08:00:52,925 autoreload 1603188 130209287479424 /home/sri-balamurugan-indane-gas-servi/parking-application-backend/parking_backend/settings.py changed, reloading.
+INFO 2025-10-29 08:00:53,576 autoreload 1607062 123931181150336 Watching for file changes with StatReloader
+INFO 2025-10-29 08:02:26,711 autoreload 1608833 124614875508864 Watching for file changes with StatReloader
+INFO 2025-10-29 08:04:43,471 autoreload 1608833 124614875508864 /home/sri-balamurugan-indane-gas-servi/parking-application-backend/parking_backend/urls.py changed, reloading.
+INFO 2025-10-29 08:04:44,108 autoreload 1611239 135223498604672 Watching for file changes with StatReloader
+INFO 2025-10-29 08:05:25,004 autoreload 1611239 135223498604672 /home/sri-balamurugan-indane-gas-servi/parking-application-backend/disputes/serializers.py changed, reloading.
+INFO 2025-10-29 08:05:25,472 autoreload 1611982 140529420550272 Watching for file changes with StatReloader
+INFO 2025-10-29 08:05:36,379 autoreload 1611982 140529420550272 /home/sri-balamurugan-indane-gas-servi/parking-application-backend/disputes/serializers.py changed, reloading.
+INFO 2025-10-29 08:05:37,123 autoreload 1612209 133134886920320 Watching for file changes with StatReloader
+INFO 2025-10-29 08:05:42,865 autoreload 1612209 133134886920320 /home/sri-balamurugan-indane-gas-servi/parking-application-backend/disputes/serializers.py changed, reloading.
+INFO 2025-10-29 08:05:43,428 autoreload 1612364 137001709998208 Watching for file changes with StatReloader
+INFO 2025-10-29 08:05:50,161 autoreload 1612364 137001709998208 /home/sri-balamurugan-indane-gas-servi/parking-application-backend/disputes/serializers.py changed, reloading.
+INFO 2025-10-29 08:05:50,772 autoreload 1612524 138502959620224 Watching for file changes with StatReloader
+INFO 2025-10-29 08:06:14,305 autoreload 1612524 138502959620224 /home/sri-balamurugan-indane-gas-servi/parking-application-backend/parking_backend/urls.py changed, reloading.
+INFO 2025-10-29 08:06:15,061 autoreload 1612959 131199831683200 Watching for file changes with StatReloader
