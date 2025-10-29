@@ -1,0 +1,834 @@
+INFO 2025-10-26 15:27:21,660 autoreload 2966780 140610585657472 Watching for file changes with StatReloader
+INFO 2025-10-26 15:29:22,692 autoreload 2969086 129635778924672 Watching for file changes with StatReloader
+ERROR 2025-10-26 15:29:34,425 exception 2969086 129635554686656 Invalid HTTP_HOST header: '0.0.0.0:8001'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/http/request.py", line 167, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '0.0.0.0:8001'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+WARNING 2025-10-26 15:29:34,442 log 2969086 129635554686656 Bad Request: /
+ERROR 2025-10-26 15:29:34,555 exception 2969086 129635554686656 Invalid HTTP_HOST header: '0.0.0.0:8001'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/http/request.py", line 167, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '0.0.0.0:8001'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+WARNING 2025-10-26 15:29:34,569 log 2969086 129635554686656 Bad Request: /favicon.ico
+WARNING 2025-10-26 15:29:46,545 log 2969086 129635554686656 Not Found: /
+WARNING 2025-10-26 15:29:46,641 log 2969086 129635554686656 Not Found: /favicon.ico
+WARNING 2025-10-26 15:30:34,881 log 2969086 129635325044416 Bad Request: /api/v1/parking-spaces/nearby/
+INFO 2025-10-27 01:50:27,522 autoreload 3167527 127225968849024 Watching for file changes with StatReloader
+WARNING 2025-10-27 01:56:04,121 log 3167527 127225744586432 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-27 01:56:04,133 log 3167527 127225744586432 Unauthorized: /api/v1/bookings/my_bookings/
+INFO 2025-10-28 00:02:45,915 autoreload 132343 136915857952896 Watching for file changes with StatReloader
+WARNING 2025-10-28 00:02:59,553 log 132343 136915566196416 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-28 00:02:59,558 log 132343 136915566196416 Unauthorized: /api/v1/bookings/my_bookings/
+INFO 2025-10-28 00:04:25,836 autoreload 134558 137276658143360 Watching for file changes with StatReloader
+WARNING 2025-10-28 00:04:30,788 log 134558 137276433626816 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-28 00:04:30,835 log 134558 137276433626816 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-28 00:11:02,379 log 134558 137276433626816 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-28 00:11:02,393 log 134558 137276433626816 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-28 00:45:04,444 log 134558 137276433626816 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-28 00:45:04,462 log 134558 137276433626816 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-28 00:45:20,583 log 134558 137276433626816 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-28 00:45:20,624 log 134558 137276433626816 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-28 00:51:37,059 log 134558 137276433626816 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-28 00:51:48,329 log 134558 137276433626816 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-28 00:51:48,342 log 134558 137276433626816 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-28 00:52:06,039 log 134558 137276433626816 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-28 00:52:06,057 log 134558 137276433626816 Unauthorized: /api/v1/parking-spaces/my_spaces/
+WARNING 2025-10-28 00:55:19,264 log 134558 137276433626816 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-28 00:55:19,315 log 134558 137276433626816 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-28 00:55:47,902 log 134558 137276433626816 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-28 00:55:47,910 log 134558 137276433626816 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-28 01:03:20,834 log 134558 137276433626816 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-28 01:03:20,847 log 134558 137276433626816 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-28 01:05:17,806 log 134558 137276433626816 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-28 01:05:17,821 log 134558 137276433626816 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-28 01:06:07,773 log 134558 137276433626816 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-28 01:06:07,821 log 134558 137276433626816 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-28 01:06:16,369 log 134558 137276433626816 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-28 01:06:16,400 log 134558 137276433626816 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-28 01:06:31,052 log 134558 137276433626816 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-28 10:14:10,027 log 134558 137276433626816 Bad Request: /api/v1/auth/register/
+WARNING 2025-10-28 10:14:27,740 log 134558 137276433626816 Bad Request: /api/v1/auth/register/
+WARNING 2025-10-28 11:11:28,670 log 134558 137276433626816 Bad Request: /api/v1/auth/register/
+WARNING 2025-10-28 11:11:37,534 log 134558 137276433626816 Bad Request: /api/v1/auth/register/
+WARNING 2025-10-28 11:11:46,686 log 134558 137276433626816 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-28 11:11:46,735 log 134558 137276348692160 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-28 11:14:01,683 log 134558 137276348692160 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-28 11:14:01,759 log 134558 137276348692160 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-28 11:18:09,837 log 134558 137276348692160 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-28 11:18:09,905 log 134558 137276348692160 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-28 11:18:20,040 log 134558 137276348692160 Bad Request: /api/v1/auth/register/
+WARNING 2025-10-28 11:19:15,717 log 134558 137276348692160 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-28 11:20:49,828 log 134558 137276348692160 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-28 11:21:11,544 log 134558 137276348692160 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-28 11:21:28,786 log 134558 137276348692160 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-28 11:29:42,443 log 134558 137276348692160 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-28 11:29:42,489 log 134558 137276433626816 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-28 11:29:51,539 log 134558 137276433626816 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-28 11:29:58,239 log 134558 137276433626816 Unauthorized: /api/v1/vehicles/
+WARNING 2025-10-28 11:29:58,267 log 134558 137276433626816 Unauthorized: /api/v1/vehicles/
+WARNING 2025-10-28 11:31:20,303 log 134558 137276433626816 Unauthorized: /api/v1/vehicles/
+WARNING 2025-10-28 11:31:46,291 log 134558 137276433626816 Unauthorized: /api/v1/vehicles/
+WARNING 2025-10-28 11:31:49,110 log 134558 137276433626816 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-28 11:32:11,717 log 134558 137276433626816 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-28 11:32:57,624 log 134558 137276433626816 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-28 11:37:08,660 log 134558 137276433626816 Forbidden: /api/v1/bookings/my_bookings/
+WARNING 2025-10-28 11:37:08,709 log 134558 137276433626816 Forbidden: /api/v1/bookings/my_bookings/
+WARNING 2025-10-28 11:37:38,074 log 134558 137276433626816 Forbidden: /api/v1/bookings/my_bookings/
+WARNING 2025-10-28 11:39:31,309 log 134558 137276433626816 Bad Request: /api/v1/vehicles/
+WARNING 2025-10-28 11:41:56,348 log 134558 137276433626816 Forbidden: /api/v1/bookings/my_bookings/
+INFO 2025-10-28 11:44:16,333 autoreload 134558 137276658143360 /home/sri-balamurugan-indane-gas-servi/parking_backend/users/models.py changed, reloading.
+INFO 2025-10-28 11:44:17,084 autoreload 696183 130591003672704 Watching for file changes with StatReloader
+WARNING 2025-10-28 11:44:55,475 log 696183 130590779111104 Forbidden: /api/v1/bookings/my_bookings/
+WARNING 2025-10-28 12:04:49,611 log 696183 130590779111104 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-28 12:04:49,656 log 696183 130590779111104 Forbidden: /api/v1/bookings/my_bookings/
+WARNING 2025-10-28 12:05:05,736 log 696183 130590779111104 Forbidden: /api/v1/bookings/my_bookings/
+WARNING 2025-10-28 12:07:40,353 log 696183 130590779111104 Bad Request: /api/v1/parking-spaces/
+WARNING 2025-10-28 12:08:34,410 log 696183 130590779111104 Bad Request: /api/v1/parking-spaces/
+WARNING 2025-10-28 12:12:31,656 log 696183 130590779111104 Forbidden: /api/v1/bookings/my_bookings/
+INFO 2025-10-28 12:20:51,060 autoreload 696183 130591003672704 /home/sri-balamurugan-indane-gas-servi/parking_backend/payments/models.py changed, reloading.
+INFO 2025-10-28 12:20:51,369 autoreload 734788 123287461404800 Watching for file changes with StatReloader
+INFO 2025-10-28 12:22:02,094 autoreload 734788 123287461404800 /home/sri-balamurugan-indane-gas-servi/parking_backend/bookings/models.py changed, reloading.
+INFO 2025-10-28 12:22:02,725 autoreload 736016 139329218830464 Watching for file changes with StatReloader
+INFO 2025-10-28 12:22:55,138 autoreload 736016 139329218830464 /home/sri-balamurugan-indane-gas-servi/parking_backend/payments/models.py changed, reloading.
+INFO 2025-10-28 12:22:55,884 autoreload 736956 134746682314880 Watching for file changes with StatReloader
+INFO 2025-10-28 12:23:44,320 autoreload 736956 134746682314880 /home/sri-balamurugan-indane-gas-servi/parking_backend/payments/serializers.py changed, reloading.
+INFO 2025-10-28 12:23:44,924 autoreload 737807 138418135879808 Watching for file changes with StatReloader
+INFO 2025-10-28 12:24:13,496 autoreload 737807 138418135879808 /home/sri-balamurugan-indane-gas-servi/parking_backend/payments/serializers.py changed, reloading.
+INFO 2025-10-28 12:24:14,217 autoreload 738329 130723392516224 Watching for file changes with StatReloader
+INFO 2025-10-28 12:24:55,130 autoreload 738329 130723392516224 /home/sri-balamurugan-indane-gas-servi/parking_backend/payments/serializers.py changed, reloading.
+INFO 2025-10-28 12:24:55,957 autoreload 739056 136883928387712 Watching for file changes with StatReloader
+INFO 2025-10-28 12:26:18,358 autoreload 739056 136883928387712 /home/sri-balamurugan-indane-gas-servi/parking_backend/payments/views.py changed, reloading.
+INFO 2025-10-28 12:26:18,714 autoreload 740510 124645520232576 Watching for file changes with StatReloader
+INFO 2025-10-28 12:27:08,683 autoreload 740510 124645520232576 /home/sri-balamurugan-indane-gas-servi/parking_backend/payments/views.py changed, reloading.
+INFO 2025-10-28 12:27:09,143 autoreload 741387 127579157799040 Watching for file changes with StatReloader
+INFO 2025-10-28 12:28:17,917 autoreload 741387 127579157799040 /home/sri-balamurugan-indane-gas-servi/parking_backend/payments/views.py changed, reloading.
+INFO 2025-10-28 12:28:18,560 autoreload 742600 123505434968192 Watching for file changes with StatReloader
+INFO 2025-10-28 12:28:50,274 autoreload 742600 123505434968192 /home/sri-balamurugan-indane-gas-servi/parking_backend/payments/views.py changed, reloading.
+INFO 2025-10-28 12:28:51,042 autoreload 743181 127630158147712 Watching for file changes with StatReloader
+INFO 2025-10-28 12:29:06,105 autoreload 743181 127630158147712 /home/sri-balamurugan-indane-gas-servi/parking_backend/payments/views.py changed, reloading.
+INFO 2025-10-28 12:29:06,753 autoreload 743465 139674746728576 Watching for file changes with StatReloader
+INFO 2025-10-28 12:29:13,360 autoreload 743465 139674746728576 /home/sri-balamurugan-indane-gas-servi/parking_backend/payments/views.py changed, reloading.
+INFO 2025-10-28 12:29:13,947 autoreload 743614 129274284318848 Watching for file changes with StatReloader
+INFO 2025-10-28 12:30:06,239 autoreload 743614 129274284318848 /home/sri-balamurugan-indane-gas-servi/parking_backend/payments/views.py changed, reloading.
+INFO 2025-10-28 12:30:06,685 autoreload 744555 125773743865984 Watching for file changes with StatReloader
+INFO 2025-10-28 12:30:15,185 autoreload 744555 125773743865984 /home/sri-balamurugan-indane-gas-servi/parking_backend/payments/views.py changed, reloading.
+INFO 2025-10-28 12:30:15,692 autoreload 744738 139965703348352 Watching for file changes with StatReloader
+INFO 2025-10-28 12:30:33,812 autoreload 744738 139965703348352 /home/sri-balamurugan-indane-gas-servi/parking_backend/payments/views.py changed, reloading.
+INFO 2025-10-28 12:30:34,277 autoreload 745079 132253810073728 Watching for file changes with StatReloader
+INFO 2025-10-28 12:31:07,728 autoreload 745079 132253810073728 /home/sri-balamurugan-indane-gas-servi/parking_backend/payments/views.py changed, reloading.
+INFO 2025-10-28 12:31:08,280 autoreload 745716 131014513361024 Watching for file changes with StatReloader
+INFO 2025-10-28 12:31:15,727 autoreload 745716 131014513361024 /home/sri-balamurugan-indane-gas-servi/parking_backend/payments/views.py changed, reloading.
+INFO 2025-10-28 12:31:16,052 autoreload 745897 125858807427200 Watching for file changes with StatReloader
+INFO 2025-10-28 12:31:47,283 autoreload 745897 125858807427200 /home/sri-balamurugan-indane-gas-servi/parking_backend/payments/views.py changed, reloading.
+INFO 2025-10-28 12:31:47,573 autoreload 746452 138501092696192 Watching for file changes with StatReloader
+INFO 2025-10-28 12:31:53,954 autoreload 746452 138501092696192 /home/sri-balamurugan-indane-gas-servi/parking_backend/payments/views.py changed, reloading.
+INFO 2025-10-28 12:31:54,585 autoreload 746592 126341965516928 Watching for file changes with StatReloader
+INFO 2025-10-28 12:32:00,023 autoreload 746592 126341965516928 /home/sri-balamurugan-indane-gas-servi/parking_backend/payments/views.py changed, reloading.
+INFO 2025-10-28 12:32:00,494 autoreload 746699 125636523020416 Watching for file changes with StatReloader
+WARNING 2025-10-28 16:19:10,924 log 746699 125636298405568 Unauthorized: /api/v1/auth/login/
+WARNING 2025-10-28 16:19:20,103 log 746699 125636298405568 Unauthorized: /api/v1/auth/login/
+WARNING 2025-10-28 16:19:52,198 log 746699 125636298405568 Unauthorized: /api/v1/auth/login/
+WARNING 2025-10-28 16:19:59,797 log 746699 125636298405568 Unauthorized: /api/v1/auth/login/
+WARNING 2025-10-28 16:20:24,344 log 746699 125636298405568 Unauthorized: /api/v1/auth/login/
+WARNING 2025-10-28 16:21:31,406 log 746699 125636298405568 Unauthorized: /api/v1/auth/login/
+WARNING 2025-10-28 16:23:42,373 log 746699 125636298405568 Unauthorized: /api/v1/auth/register/
+WARNING 2025-10-28 16:24:45,540 log 746699 125636298405568 Unauthorized: /api/v1/auth/register/
+INFO 2025-10-28 16:26:58,846 autoreload 988108 137341113704576 Watching for file changes with StatReloader
+WARNING 2025-10-28 16:27:12,709 log 988108 137340887496384 Unauthorized: /api/v1/auth/register/
+WARNING 2025-10-28 16:27:44,428 log 988108 137340887496384 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-28 16:28:06,967 log 988108 137340887496384 Bad Request: /api/v1/auth/login/
+WARNING 2025-10-28 16:30:32,268 log 988108 137340887496384 Bad Request: /api/v1/auth/login/
+WARNING 2025-10-28 16:31:08,790 log 988108 137340887496384 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-28 16:31:08,864 log 988108 137340887496384 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-28 16:38:17,349 log 988108 137340887496384 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-28 16:38:17,360 log 988108 137340887496384 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-28 16:50:01,767 log 988108 137340887496384 Bad Request: /api/v1/auth/login/
+INFO 2025-10-28 23:02:00,022 autoreload 1036477 123875194863744 Watching for file changes with StatReloader
+WARNING 2025-10-28 23:19:48,831 log 1036477 123874901489344 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-28 23:19:48,880 log 1036477 123874893096640 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-28 23:21:22,959 log 1036477 123874893096640 Bad Request: /api/v1/auth/login/
+WARNING 2025-10-28 23:22:26,150 log 1036477 123874893096640 Bad Request: /api/v1/auth/register/
+WARNING 2025-10-28 23:22:36,393 log 1036477 123874893096640 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-28 23:22:36,471 log 1036477 123874893096640 Forbidden: /api/v1/bookings/my_bookings/
+ERROR 2025-10-28 23:26:30,704 log 1036477 123874893096640 Internal Server Error: /api/v1/parking-spaces/
+Traceback (most recent call last):
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/home/sri-balamurugan-indane-gas-servi/parking_backend/parking/views.py", line 47, in perform_create
+    serializer.save(owner=self.request.user)
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_backend/parking/serializers.py", line 77, in create
+    space = ParkingSpace.objects.create(owner=self.context['request'].user, **validated_data)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: django.db.models.query.QuerySet.create() got multiple values for keyword argument 'owner'
+INFO 2025-10-28 23:28:25,018 autoreload 1036477 123875194863744 /home/sri-balamurugan-indane-gas-servi/parking_backend/parking/serializers.py changed, reloading.
+INFO 2025-10-28 23:28:25,675 autoreload 1065391 132820888039552 Watching for file changes with StatReloader
+ERROR 2025-10-28 23:28:30,816 log 1065391 132820588558016 Internal Server Error: /api/v1/parking-spaces/
+Traceback (most recent call last):
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/home/sri-balamurugan-indane-gas-servi/parking_backend/parking/views.py", line 47, in perform_create
+    serializer.save(owner=self.request.user)
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_backend/parking/serializers.py", line 78, in create
+    space = ParkingSpace.objects.create(owner=self.context['request'].user, **validated_data)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: django.db.models.query.QuerySet.create() got multiple values for keyword argument 'owner'
+INFO 2025-10-28 23:30:32,483 autoreload 1065391 132820888039552 /home/sri-balamurugan-indane-gas-servi/parking_backend/users/models.py changed, reloading.
+INFO 2025-10-28 23:30:33,201 autoreload 1067594 123813037592704 Watching for file changes with StatReloader
+ERROR 2025-10-28 23:30:39,159 log 1067594 123812812158656 Internal Server Error: /api/v1/parking-spaces/
+Traceback (most recent call last):
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/home/sri-balamurugan-indane-gas-servi/parking_backend/parking/views.py", line 47, in perform_create
+    serializer.save(owner=self.request.user)
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_backend/parking/serializers.py", line 78, in create
+    space = ParkingSpace.objects.create(owner=self.context['request'].user, **validated_data)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: django.db.models.query.QuerySet.create() got multiple values for keyword argument 'owner'
+INFO 2025-10-28 23:30:56,842 autoreload 1067594 123813037592704 /home/sri-balamurugan-indane-gas-servi/parking_backend/users/models.py changed, reloading.
+INFO 2025-10-28 23:30:57,666 autoreload 1068124 134017522208896 Watching for file changes with StatReloader
+ERROR 2025-10-28 23:31:01,601 log 1068124 134017297938112 Internal Server Error: /api/v1/parking-spaces/
+Traceback (most recent call last):
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/home/sri-balamurugan-indane-gas-servi/parking_backend/parking/views.py", line 47, in perform_create
+    serializer.save(owner=self.request.user)
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_backend/parking/serializers.py", line 78, in create
+    space = ParkingSpace.objects.create(owner=self.context['request'].user, **validated_data)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: django.db.models.query.QuerySet.create() got multiple values for keyword argument 'owner'
+INFO 2025-10-28 23:35:22,596 autoreload 1068124 134017522208896 /home/sri-balamurugan-indane-gas-servi/parking_backend/parking/views.py changed, reloading.
+INFO 2025-10-28 23:35:23,232 autoreload 1072684 133279803416704 Watching for file changes with StatReloader
+INFO 2025-10-28 23:35:54,035 autoreload 1072684 133279803416704 /home/sri-balamurugan-indane-gas-servi/parking_backend/users/models.py changed, reloading.
+INFO 2025-10-28 23:35:54,760 autoreload 1073230 129159263178880 Watching for file changes with StatReloader
+WARNING 2025-10-28 23:37:07,542 log 1073230 129159037712064 Forbidden: /api/v1/bookings/my_bookings/
+WARNING 2025-10-28 23:41:42,674 log 1073230 129159037712064 Unauthorized: /api/v1/bookings/my_bookings/
+INFO 2025-10-28 23:48:07,702 autoreload 1073230 129159263178880 /home/sri-balamurugan-indane-gas-servi/parking_backend/parking/serializers.py changed, reloading.
+INFO 2025-10-28 23:48:08,390 autoreload 1086133 128949392121984 Watching for file changes with StatReloader
+INFO 2025-10-28 23:53:29,563 autoreload 1086133 128949392121984 /home/sri-balamurugan-indane-gas-servi/parking_backend/parking/serializers.py changed, reloading.
+INFO 2025-10-28 23:53:30,088 autoreload 1091614 135298595733632 Watching for file changes with StatReloader
+INFO 2025-10-28 23:54:00,389 autoreload 1091614 135298595733632 /home/sri-balamurugan-indane-gas-servi/parking_backend/parking/serializers.py changed, reloading.
+INFO 2025-10-28 23:54:00,984 autoreload 1092168 134886096679040 Watching for file changes with StatReloader
+INFO 2025-10-28 23:54:35,044 autoreload 1092168 134886096679040 /home/sri-balamurugan-indane-gas-servi/parking_backend/parking/serializers.py changed, reloading.
+INFO 2025-10-28 23:54:35,808 autoreload 1092783 126800861470848 Watching for file changes with StatReloader
+WARNING 2025-10-29 00:16:38,845 log 1092783 126800637195968 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-29 00:16:38,919 log 1092783 126800637195968 Forbidden: /api/v1/bookings/my_bookings/
+WARNING 2025-10-29 00:20:37,312 log 1092783 126800637195968 Bad Request: /api/v1/parking-spaces/
+WARNING 2025-10-29 00:24:41,238 log 1092783 126800637195968 Unauthorized: /api/v1/bookings/my_bookings/
+ERROR 2025-10-29 01:27:26,611 log 1092783 126800599713472 Internal Server Error: /api/v1/bookings/
+Traceback (most recent call last):
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_backend/bookings/serializers.py", line 40, in create
+    vehicle = DriverVehicle.objects.get(id=vehicle_id, driver=user)
+              ^^^^^^^^^^^^^
+NameError: name 'DriverVehicle' is not defined
+ERROR 2025-10-29 01:27:32,046 log 1092783 126800599713472 Internal Server Error: /api/v1/bookings/
+Traceback (most recent call last):
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_backend/bookings/serializers.py", line 40, in create
+    vehicle = DriverVehicle.objects.get(id=vehicle_id, driver=user)
+              ^^^^^^^^^^^^^
+NameError: name 'DriverVehicle' is not defined
+INFO 2025-10-29 01:29:17,607 autoreload 1092783 126800861470848 /home/sri-balamurugan-indane-gas-servi/parking_backend/bookings/serializers.py changed, reloading.
+INFO 2025-10-29 01:29:18,449 autoreload 1198627 132214348230784 Watching for file changes with StatReloader
+ERROR 2025-10-29 01:29:29,511 log 1198627 132214054450880 Internal Server Error: /api/v1/bookings/
+Traceback (most recent call last):
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.NotNullViolation: null value in column "base_price" of relation "bookings_booking" violates not-null constraint
+DETAIL:  Failing row contains (1, daily, 2025-10-29 01:27:04.86+00, 2025-10-30 06:57:00+00, pending_payment, null, 0.00, null, , 2025-10-29 01:29:29.389676+00, 2025-10-29 01:29:29.389699+00, 4, 2, 1).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_backend/bookings/serializers.py", line 43, in create
+    booking = Booking.objects.create(
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/models/query.py", line 658, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/models/base.py", line 1020, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/models/base.py", line 1061, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/models/query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1820, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: null value in column "base_price" of relation "bookings_booking" violates not-null constraint
+DETAIL:  Failing row contains (1, daily, 2025-10-29 01:27:04.86+00, 2025-10-30 06:57:00+00, pending_payment, null, 0.00, null, , 2025-10-29 01:29:29.389676+00, 2025-10-29 01:29:29.389699+00, 4, 2, 1).
+
+INFO 2025-10-29 01:33:23,146 autoreload 1202890 125326767759488 Watching for file changes with StatReloader
+ERROR 2025-10-29 01:33:28,755 log 1202890 125326474606272 Internal Server Error: /api/v1/bookings/
+Traceback (most recent call last):
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.NotNullViolation: null value in column "base_price" of relation "bookings_booking" violates not-null constraint
+DETAIL:  Failing row contains (2, daily, 2025-10-29 01:33:00+00, 2025-10-31 07:03:00+00, pending_payment, null, 0.00, null, , 2025-10-29 01:33:28.642261+00, 2025-10-29 01:33:28.642284+00, 4, 2, 1).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_backend/bookings/serializers.py", line 43, in create
+    booking = Booking.objects.create(
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/models/query.py", line 658, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/models/base.py", line 1020, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/models/base.py", line 1061, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/models/query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1820, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: null value in column "base_price" of relation "bookings_booking" violates not-null constraint
+DETAIL:  Failing row contains (2, daily, 2025-10-29 01:33:00+00, 2025-10-31 07:03:00+00, pending_payment, null, 0.00, null, , 2025-10-29 01:33:28.642261+00, 2025-10-29 01:33:28.642284+00, 4, 2, 1).
+
+INFO 2025-10-29 01:35:34,610 autoreload 1202890 125326767759488 /home/sri-balamurugan-indane-gas-servi/parking_backend/bookings/models.py changed, reloading.
+INFO 2025-10-29 01:35:35,286 autoreload 1205154 125775077740672 Watching for file changes with StatReloader
+ERROR 2025-10-29 01:35:38,947 log 1205154 125774853043904 Internal Server Error: /api/v1/bookings/
+Traceback (most recent call last):
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.NotNullViolation: null value in column "base_price" of relation "bookings_booking" violates not-null constraint
+DETAIL:  Failing row contains (3, daily, 2025-10-29 01:33:00+00, 2025-10-31 07:03:00+00, pending_payment, null, 0.00, null, , 2025-10-29 01:35:38.835557+00, 2025-10-29 01:35:38.83558+00, 4, 2, 1).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_backend/bookings/serializers.py", line 43, in create
+    booking = Booking.objects.create(
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/models/query.py", line 658, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/models/base.py", line 1020, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/models/base.py", line 1061, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/models/query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1820, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: null value in column "base_price" of relation "bookings_booking" violates not-null constraint
+DETAIL:  Failing row contains (3, daily, 2025-10-29 01:33:00+00, 2025-10-31 07:03:00+00, pending_payment, null, 0.00, null, , 2025-10-29 01:35:38.835557+00, 2025-10-29 01:35:38.83558+00, 4, 2, 1).
+
+INFO 2025-10-29 01:42:57,383 autoreload 1205154 125775077740672 /home/sri-balamurugan-indane-gas-servi/parking_backend/bookings/serializers.py changed, reloading.
+INFO 2025-10-29 01:42:58,008 autoreload 1212722 128398978195584 Watching for file changes with StatReloader
+INFO 2025-10-29 01:49:07,423 autoreload 1212722 128398978195584 /home/sri-balamurugan-indane-gas-servi/parking_backend/bookings/serializers.py changed, reloading.
+INFO 2025-10-29 01:49:08,152 autoreload 1219074 133175453483136 Watching for file changes with StatReloader
+INFO 2025-10-29 01:50:14,248 autoreload 1219074 133175453483136 /home/sri-balamurugan-indane-gas-servi/parking_backend/bookings/serializers.py changed, reloading.
+INFO 2025-10-29 01:50:14,931 autoreload 1220271 133744160256128 Watching for file changes with StatReloader
+WARNING 2025-10-29 05:33:59,868 log 1220271 133743867066048 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-29 05:33:59,917 log 1220271 133743857624768 Unauthorized: /api/v1/bookings/my_bookings/
+ERROR 2025-10-29 05:54:06,332 log 1220271 133743840839360 Internal Server Error: /api/v1/payments/initiate/
+Traceback (most recent call last):
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column payments_payment.has_commission_applied does not exist
+LINE 1: ...t"."created_at", "payments_payment"."updated_at", "payments_...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_backend/payments/views.py", line 42, in initiate_payment
+    payment, created = Payment.objects.get_or_create(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/models/query.py", line 916, in get_or_create
+    return self.get(**kwargs), False
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/models/query.py", line 633, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/models/query.py", line 380, in __len__
+    self._fetch_all()
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/models/query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1560, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column payments_payment.has_commission_applied does not exist
+LINE 1: ...t"."created_at", "payments_payment"."updated_at", "payments_...
+                                                             ^
+
+ERROR 2025-10-29 05:55:03,594 log 1220271 133743840839360 Internal Server Error: /api/v1/payments/initiate/
+Traceback (most recent call last):
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column payments_payment.has_commission_applied does not exist
+LINE 1: ...t"."created_at", "payments_payment"."updated_at", "payments_...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_backend/payments/views.py", line 42, in initiate_payment
+    payment, created = Payment.objects.get_or_create(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/models/query.py", line 916, in get_or_create
+    return self.get(**kwargs), False
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/models/query.py", line 633, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/models/query.py", line 380, in __len__
+    self._fetch_all()
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/models/query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1560, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column payments_payment.has_commission_applied does not exist
+LINE 1: ...t"."created_at", "payments_payment"."updated_at", "payments_...
+                                                             ^
+
