@@ -4,6 +4,8 @@ from pathlib import Path
 from datetime import timedelta
 from decouple import config
 
+from celery.schedules import crontab
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = config('SECRET_KEY', default='your-secret-key-change-in-production')
@@ -25,6 +27,7 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
     'corsheaders',
     'django_filters',
+    'django_celery_beat',
     
     # Local apps
     'users',
@@ -144,6 +147,7 @@ CORS_ALLOW_CREDENTIALS = True
 # Razorpay Configuration
 RAZORPAY_KEY_ID = config('RAZORPAY_KEY_ID', default='')
 RAZORPAY_KEY_SECRET = config('RAZORPAY_KEY_SECRET', default='')
+RAZORPAY_WEBHOOK_SECRET = config('RAZORPAY_WEBHOOK_SECRET', default='')
 
 # Email Configuration (for notifications)
 EMAIL_BACKEND = config('EMAIL_BACKEND', default='django.core.mail.backends.console.EmailBackend')
@@ -192,6 +196,28 @@ CELERY_ACCEPT_CONTENT = ['json']
 CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'
 
+CELERY_BEAT_SCHEDULE = {
+    'settle-cod-payments': {
+        'task': 'payments.tasks.settle_pending_cod_payments',
+        'schedule': crontab(hour=0, minute=0),  # Daily at midnight
+    },
+    'block-owners-overdue': {
+        'task': 'payments.tasks.auto_block_owners_with_overdue_dues',
+        'schedule': crontab(hour=2, minute=0),  # Daily at 2 AM
+    },
+    'send-due-notifications': {
+        'task': 'payments.tasks.send_commission_due_notifications',
+        'schedule': crontab(hour=10, minute=0),  # Daily at 10 AM
+    },
+    'reconcile-payments': {
+        'task': 'payments.tasks.reconcile_razorpay_payments',
+        'schedule': crontab(minute='*/30'),  # Every 30 minutes
+    },
+    'check-refund-status': {
+        'task': 'payments.tasks.check_refund_status',
+        'schedule': crontab(minute='*/15'),  # Every 15 minutes
+    },
+}
 
 
 

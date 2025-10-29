@@ -1,0 +1,211 @@
+{% extends "admin/base_site.html" %}
+{% load admin_urls static %}
+
+{% block extrahead %}
+<style>
+  .dashboard-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+  }
+  
+  .metric-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .metric-card h3 {
+    margin: 0 0 10px 0;
+    color: #666;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  .metric-value {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .positive { color: #27ae60; }
+  .negative { color: #e74c3c; }
+  .neutral { color: #3498db; }
+  
+  .table-section {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 20px 0;
+    padding: 20px;
+    overflow-x: auto;
+  }
+  
+  .table-section h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #333;
+    border-bottom: 2px solid #417690;
+    padding-bottom: 10px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th {
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: left;
+    font-weight: 600;
+    color: #333;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  td {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  tr:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .amount { font-weight: bold; color: #27ae60; }
+  .due { color: #e74c3c; font-weight: bold; }
+  .pending { color: #f39c12; }
+</style>
+{% endblock %}
+
+{% block content %}
+<h1>Commission Management Dashboard</h1>
+
+<div class="dashboard-container">
+  <div class="metric-card">
+    <h3>Total Commission Earned</h3>
+    <div class="metric-value positive">₹{{ total_earnings|floatformat:2 }}</div>
+  </div>
+  
+  <div class="metric-card">
+    <h3>Total Payable to Owners</h3>
+    <div class="metric-value neutral">₹{{ total_payable|floatformat:2 }}</div>
+  </div>
+  
+  <div class="metric-card">
+    <h3>Pending Dues</h3>
+    <div class="metric-value negative">₹{{ total_pending_dues|floatformat:2 }}</div>
+  </div>
+  
+  <div class="metric-card">
+    <h3>Active Owners</h3>
+    <div class="metric-value positive">{{ active_owners }}/{{ total_owners }}</div>
+  </div>
+  
+  <div class="metric-card">
+    <h3>Blocked Owners</h3>
+    <div class="metric-value negative">{{ blocked_owners }}</div>
+  </div>
+</div>
+
+<div class="table-section">
+  <h3>Owners with Pending Dues</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Owner Name</th>
+        <th>Email</th>
+        <th>Pending Dues</th>
+        <th>Account Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for owner in overdue_owners %}
+      <tr>
+        <td>{{ owner.owner.get_full_name }}</td>
+        <td>{{ owner.owner.email }}</td>
+        <td class="due">₹{{ owner.pending_dues|floatformat:2 }}</td>
+        <td>
+          {% if owner.is_blocked %}
+            <span style="background: #e74c3c; color: white; padding: 3px 8px; border-radius: 3px;">BLOCKED</span>
+          {% else %}
+            <span style="background: #27ae60; color: white; padding: 3px 8px; border-radius: 3px;">ACTIVE</span>
+          {% endif %}
+        </td>
+      </tr>
+      {% empty %}
+      <tr>
+        <td colspan="4" style="text-align: center; color: #999;">No owners with pending dues</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+<div class="table-section">
+  <h3>Recent Commission Transactions</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Owner</th>
+        <th>Type</th>
+        <th>Booking Amount</th>
+        <th>Commission</th>
+        <th>Net Amount</th>
+        <th>Status</th>
+        <th>Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for trans in recent_transactions %}
+      <tr>
+        <td>#{{ trans.id }}</td>
+        <td>{{ trans.owner.get_full_name }}</td>
+        <td>{{ trans.get_transaction_type_display }}</td>
+        <td>₹{{ trans.booking_amount|floatformat:2 }}</td>
+        <td>₹{{ trans.commission_amount|floatformat:2 }}</td>
+        <td class="amount">₹{{ trans.net_amount|floatformat:2 }}</td>
+        <td>{{ trans.get_status_display }}</td>
+        <td>{{ trans.created_at|date:"M d, Y H:i" }}</td>
+      </tr>
+      {% empty %}
+      <tr>
+        <td colspan="8" style="text-align: center; color: #999;">No transactions</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+<div class="table-section">
+  <h3>Dues by Aging Bucket</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Aging Bucket</th>
+        <th>Count</th>
+        <th>Total Amount</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for bucket in aging_data %}
+      <tr>
+        <td>{{ bucket.get_aging_bucket_display }}</td>
+        <td>{{ bucket.count }}</td>
+        <td class="due">₹{{ bucket.total_amount|floatformat:2 }}</td>
+      </tr>
+      {% empty %}
+      <tr>
+        <td colspan="3" style="text-align: center; color: #999;">No aging data</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+{% endblock %}

@@ -279,6 +279,14 @@ class CommissionDue(models.Model):
         on_delete=models.CASCADE,
         related_name='commission_dues'
     )
+    owner_account = models.ForeignKey(
+        'payments.OwnerCommissionAccount',
+        on_delete=models.CASCADE,
+        related_name='commission_dues',
+        null=True,
+        blank=True,
+        help_text="Link to the owner's commission account"
+    )
     booking = models.ForeignKey(
         'bookings.Booking',
         on_delete=models.SET_NULL,

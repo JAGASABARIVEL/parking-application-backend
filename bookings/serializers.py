@@ -13,7 +13,7 @@ class BookingCreateSerializer(serializers.ModelSerializer):
         fields = ['id', 'parking_space', 'vehicle_id', 'booking_type', 'start_datetime', 'end_datetime',
                   'special_instructions']
         read_only_fields = ['id']  # ✅ ensures it's returned, not expected in POST
-    
+
     def validate(self, data):
         parking_space = data['parking_space']
         start_datetime = data['start_datetime']
@@ -29,6 +29,14 @@ class BookingCreateSerializer(serializers.ModelSerializer):
         
         if overlapping:
             raise serializers.ValidationError("Parking space not available for selected time")
+        
+        # CHECK: Owner must not be blocked
+        from payments.services import CommissionService
+        if not CommissionService.can_owner_receive_payment(parking_space.owner):
+            return Response(
+                {'error': 'Parking space owner account is currently blocked. Please try another space.'},
+                status=status.HTTP_400_BAD_REQUEST
+            )
         
         # Validate end time is after start time
         if end_datetime <= start_datetime:
@@ -77,12 +85,18 @@ class BookingDetailSerializer(serializers.ModelSerializer):
     vehicle = DriverVehicleSerializer(read_only=True)
     location_tracking = serializers.SerializerMethodField()
     review = serializers.SerializerMethodField()
+    payment_breakdown = serializers.SerializerMethodField()
+    
+    
     
     class Meta:
         model = Booking
         fields = '__all__'
-        read_only_fields = ['driver', 'created_at', 'updated_at']
+        read_only_fields = ['driver', 'created_at', 'updated_at', 'payment_breakdown']
     
+    def get_payment_breakdown(self, obj):
+        return obj.get_payment_breakdown()
+
     def get_location_tracking(self, obj):
         try:
             tracking = obj.location_tracking

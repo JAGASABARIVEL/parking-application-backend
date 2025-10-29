@@ -27,6 +27,7 @@ from parking.views import ParkingSpaceViewSet
 from bookings.views import BookingViewSet, ReviewViewSet
 from payments.views import PaymentViewSet
 from disputes.views import DisputeViewSet
+from payments.webhooks import razorpay_webhook
 
 # Create router and register viewsets
 router = DefaultRouter()
@@ -60,6 +61,10 @@ urlpatterns = [
             path('verify/', PaymentViewSet.as_view({'post': 'verify_payment'}), name='verify_payment'),
             path('status/', PaymentViewSet.as_view({'get': 'payment_status'}), name='payment_status'),
         ])),
+    ])),
+
+    path('webhooks/', include([
+        path('razorpay/payment/', razorpay_webhook, name='razorpay_webhook'),
     ])),
     
     # Serve media files

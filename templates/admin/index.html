@@ -1,0 +1,21 @@
+{% extends "admin/index.html" %}
+{% load static %}
+
+
+{% block content %}
+  
+  <div style="margin-top:30px;">
+    <div style="display:flex; gap:20px; flex-wrap:wrap;">
+      <div style="background:#fff; border:1px solid #ddd; border-radius:8px; padding:20px; box-shadow:0 2px 4px rgba(0,0,0,0.1); width:250px;">
+        <h3 style="margin:0 0 10px 0; color:#333;">Commission Dashboard</h3>
+        <p style="font-size:14px; color:#666;">View commission summary, owner dues, and payment analytics.</p>
+        <a href="{% url 'admin:commission_dashboard' %}"
+           style="display:inline-block; background:#417690; color:white; padding:8px 12px; border-radius:4px; text-decoration:none;">
+           Open Dashboard →
+        </a>
+      </div>
+    </div>
+  </div>
+  <br>
+  {{ block.super }}
+{% endblock %}

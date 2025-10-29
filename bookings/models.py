@@ -82,6 +82,29 @@ class Booking(models.Model):
         
         self.total_price = self.base_price - self.discount
         return self.total_price
+    
+    def get_payment_breakdown(self):
+        '''Get detailed payment breakdown'''
+        from payments.models import CommissionTransaction
+        from payments.services import CommissionService
+        
+        settings = CommissionService.get_settings()
+        
+        # Calculate commission
+        commission = (Decimal(self.total_price) * Decimal(settings.commission_percentage)) / Decimal(100)
+        commission = max(commission, Decimal(settings.minimum_commission))
+        
+        processing_fee = (Decimal(self.total_price) * Decimal(settings.payment_processing_fee)) / Decimal(100)
+        
+        owner_gets = self.total_price - commission - processing_fee
+        
+        return {
+            'booking_amount': self.total_price,
+            'commission': commission,
+            'commission_percentage': settings.commission_percentage,
+            'processing_fee': processing_fee,
+            'owner_receives': owner_gets,
+        }
 
 class BookingLocation(models.Model):
     """Real-time location tracking for active bookings"""

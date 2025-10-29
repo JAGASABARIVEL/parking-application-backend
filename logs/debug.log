@@ -862,3 +862,75 @@ INFO 2025-10-29 08:05:50,161 autoreload 1612364 137001709998208 /home/sri-balamu
 INFO 2025-10-29 08:05:50,772 autoreload 1612524 138502959620224 Watching for file changes with StatReloader
 INFO 2025-10-29 08:06:14,305 autoreload 1612524 138502959620224 /home/sri-balamurugan-indane-gas-servi/parking-application-backend/parking_backend/urls.py changed, reloading.
 INFO 2025-10-29 08:06:15,061 autoreload 1612959 131199831683200 Watching for file changes with StatReloader
+INFO 2025-10-29 12:31:44,459 autoreload 1885007 135684735193216 Watching for file changes with StatReloader
+WARNING 2025-10-29 12:31:55,741 log 1885007 135684485535424 Not Found: /favicon.ico
+WARNING 2025-10-29 12:32:14,026 log 1885007 135684485535424 Not Found: /
+WARNING 2025-10-29 12:36:30,824 log 1885007 135684123784896 Not Found: /admin/commission-dashboard/
+WARNING 2025-10-29 12:37:09,587 log 1885007 135684123784896 Not Found: /admin/commission_dashboard.html
+ERROR 2025-10-29 12:38:05,694 log 1885007 135684123784896 Internal Server Error: /admin/payments/ownercommissionaccount/dashboard/
+Traceback (most recent call last):
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/template/response.py", line 111, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/template/response.py", line 87, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/template/response.py", line 71, in resolve_template
+    return get_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: admin/commission_dashboard.html
+INFO 2025-10-29 12:39:22,736 autoreload 1893439 135403149353088 Watching for file changes with StatReloader
+ERROR 2025-10-29 12:42:54,805 log 1893439 135402918770368 Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/template/response.py", line 111, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/template/response.py", line 87, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/template/response.py", line 71, in resolve_template
+    return get_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/template/base.py", line 514, in parse
+    self.extend_nodelist(nodelist, compiled_result, token)
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/template/base.py", line 531, in extend_nodelist
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: <ExtendsNode: extends "admin/index.html"> must be the first tag in the template.
