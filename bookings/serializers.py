@@ -1,4 +1,5 @@
 # ==================== BOOKINGS/SERIALIZERS.PY ====================
+
 from rest_framework import serializers
 from .models import Booking, BookingLocation, Review
 from parking.serializers import ParkingSpaceListSerializer

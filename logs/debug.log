@@ -934,3 +934,299 @@ Traceback (most recent call last):
   File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/template/base.py", line 531, in extend_nodelist
     raise self.error(
 django.template.exceptions.TemplateSyntaxError: <ExtendsNode: extends "admin/index.html"> must be the first tag in the template.
+INFO 2025-10-29 16:07:03,495 autoreload 2105910 133621203083392 Watching for file changes with StatReloader
+WARNING 2025-10-29 16:07:08,795 log 2105910 133620971861696 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-29 16:07:08,849 log 2105910 133620962420416 Unauthorized: /api/v1/bookings/my_bookings/
+ERROR 2025-10-29 16:07:47,836 log 2105910 133620593325760 Internal Server Error: /api/v1/bookings/
+Traceback (most recent call last):
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 429, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking-application-backend/bookings/serializers.py", line 35, in validate
+    if not CommissionService.can_owner_receive_payment(parking_space.owner):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'CommissionService' has no attribute 'can_owner_receive_payment'
+INFO 2025-10-29 16:12:00,869 autoreload 2105910 133621203083392 /home/sri-balamurugan-indane-gas-servi/parking-application-backend/bookings/serializers.py changed, reloading.
+INFO 2025-10-29 16:12:01,521 autoreload 2111309 130506956636288 Watching for file changes with StatReloader
+ERROR 2025-10-29 16:12:10,111 log 2111309 130506725258944 Internal Server Error: /api/v1/bookings/
+Traceback (most recent call last):
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 429, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking-application-backend/bookings/serializers.py", line 34, in validate
+    from .services import CommissionService
+  File "/home/sri-balamurugan-indane-gas-servi/parking-application-backend/bookings/services.py", line 163
+    #payment TODO: Complete the remaining code
+                                              ^
+SyntaxError: expected 'except' or 'finally' block
+INFO 2025-10-29 16:14:54,249 autoreload 2111309 130506956636288 /home/sri-balamurugan-indane-gas-servi/parking-application-backend/payments/services.py changed, reloading.
+INFO 2025-10-29 16:14:55,345 autoreload 2114384 132122248577152 Watching for file changes with StatReloader
+INFO 2025-10-29 16:15:11,585 autoreload 2114384 132122248577152 /home/sri-balamurugan-indane-gas-servi/parking-application-backend/bookings/serializers.py changed, reloading.
+INFO 2025-10-29 16:15:12,276 autoreload 2114739 134859063693440 Watching for file changes with StatReloader
+WARNING 2025-10-29 16:15:20,638 log 2114739 134858751866560 Not Found: /api/v1/payments/wallet/balance/
+WARNING 2025-10-29 16:15:20,732 log 2114739 134858751866560 Not Found: /api/v1/payments/wallet/balance/
+ERROR 2025-10-29 16:15:20,785 log 2114739 134858832606912 Internal Server Error: /api/v1/bookings/11/
+Traceback (most recent call last):
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/mixins.py", line 56, in retrieve
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 555, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/fields.py", line 1838, in to_representation
+    return method(value)
+           ^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking-application-backend/bookings/serializers.py", line 98, in get_payment_breakdown
+    return obj.get_payment_breakdown()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking-application-backend/bookings/models.py", line 94, in get_payment_breakdown
+    commission = (Decimal(self.total_price) * Decimal(settings.commission_percentage)) / Decimal(100)
+                  ^^^^^^^
+NameError: name 'Decimal' is not defined
+WARNING 2025-10-29 16:15:20,867 log 2114739 134858832606912 Not Found: /api/v1/payments/wallet/balance/
+INFO 2025-10-29 16:18:00,312 autoreload 2117725 135958536290432 Watching for file changes with StatReloader
+WARNING 2025-10-29 16:18:06,145 log 2117725 135958295996096 Not Found: /api/v1/payments/wallet/balance/
+WARNING 2025-10-29 16:18:06,161 log 2117725 135958295996096 Not Found: /api/v1/payments/wallet/balance/
+WARNING 2025-10-29 16:18:06,297 log 2117725 135958295996096 Not Found: /api/v1/payments/wallet/balance/
+ERROR 2025-10-29 16:18:06,351 log 2117725 135958305437376 Internal Server Error: /api/v1/bookings/12/
+Traceback (most recent call last):
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/mixins.py", line 56, in retrieve
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 555, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking_venv/lib/python3.12/site-packages/rest_framework/fields.py", line 1838, in to_representation
+    return method(value)
+           ^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking-application-backend/bookings/serializers.py", line 99, in get_payment_breakdown
+    return obj.get_payment_breakdown()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sri-balamurugan-indane-gas-servi/parking-application-backend/bookings/models.py", line 94, in get_payment_breakdown
+    commission = (Decimal(self.total_price) * Decimal(settings.commission_percentage)) / Decimal(100)
+                  ^^^^^^^
+NameError: name 'Decimal' is not defined
+INFO 2025-10-29 16:18:24,923 autoreload 2117725 135958536290432 /home/sri-balamurugan-indane-gas-servi/parking-application-backend/bookings/serializers.py changed, reloading.
+INFO 2025-10-29 16:18:26,208 autoreload 2118219 127676551159936 Watching for file changes with StatReloader
+INFO 2025-10-29 16:18:48,907 autoreload 2118219 127676551159936 /home/sri-balamurugan-indane-gas-servi/parking-application-backend/bookings/models.py changed, reloading.
+INFO 2025-10-29 16:18:49,468 autoreload 2118668 140311117209728 Watching for file changes with StatReloader
+WARNING 2025-10-29 16:18:58,229 log 2118668 140310801802944 Not Found: /api/v1/payments/wallet/balance/
+WARNING 2025-10-29 16:18:58,261 log 2118668 140310801802944 Not Found: /api/v1/payments/wallet/balance/
+WARNING 2025-10-29 16:18:58,315 log 2118668 140310801802944 Not Found: /api/v1/payments/wallet/balance/
+WARNING 2025-10-29 16:24:07,801 log 2118668 140310801802944 Not Found: /api/v1/disputes/my-disputes/
+WARNING 2025-10-29 16:24:07,909 log 2118668 140310801802944 Not Found: /api/v1/disputes/my-disputes/
+WARNING 2025-10-29 16:24:08,008 log 2118668 140310801802944 Not Found: /api/v1/disputes/my-disputes/
+WARNING 2025-10-29 16:24:17,048 log 2118668 140310801802944 Not Found: /api/v1/returns/my-returns/
+WARNING 2025-10-29 16:24:17,126 log 2118668 140310801802944 Not Found: /api/v1/returns/my-returns/
+WARNING 2025-10-29 16:24:17,214 log 2118668 140310801802944 Not Found: /api/v1/returns/my-returns/
+WARNING 2025-10-29 16:24:28,106 log 2118668 140310801802944 Not Found: /api/v1/disputes/my-disputes/
+WARNING 2025-10-29 16:24:28,162 log 2118668 140310801802944 Not Found: /api/v1/disputes/my-disputes/
+WARNING 2025-10-29 16:24:28,233 log 2118668 140310801802944 Not Found: /api/v1/disputes/my-disputes/
+INFO 2025-10-29 16:26:35,008 autoreload 2127133 125108431679616 Watching for file changes with StatReloader
+WARNING 2025-10-29 16:38:10,439 log 2127133 125108191487680 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-29 16:38:10,453 log 2127133 125108191487680 Forbidden: /api/v1/bookings/my_bookings/
+WARNING 2025-10-29 16:43:52,459 log 2127133 125108191487680 Unauthorized: /api/v1/bookings/my_bookings/
+INFO 2025-10-29 23:48:33,913 autoreload 10950 129316813697152 Watching for file changes with StatReloader
+WARNING 2025-10-29 23:52:08,660 log 10950 129316583110336 Bad Request: /api/v1/auth/login/
+WARNING 2025-10-29 23:52:36,624 log 10950 129316583110336 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-29 23:52:36,673 log 10950 129316499224256 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-29 23:58:25,218 log 10950 129316490831552 Not Found: /api/v1/payments/wallet/balance/
+WARNING 2025-10-29 23:58:25,311 log 10950 129316490831552 Not Found: /api/v1/payments/wallet/balance/
+WARNING 2025-10-29 23:58:25,573 log 10950 129316490831552 Not Found: /api/v1/payments/wallet/balance/
+INFO 2025-10-30 00:21:57,868 autoreload 10950 129316813697152 /home/sri-balamurugan-indane-gas-servi/parking-application-backend/payments/views.py changed, reloading.
+INFO 2025-10-30 00:21:58,618 autoreload 28205 135174647627904 Watching for file changes with StatReloader
+WARNING 2025-10-30 00:23:55,896 log 28205 135174397351616 Not Found: /api/v1/payments/wallet/balance/
+WARNING 2025-10-30 00:23:55,918 log 28205 135174397351616 Not Found: /api/v1/payments/wallet/balance/
+WARNING 2025-10-30 00:23:55,989 log 28205 135174406792896 Not Found: /api/v1/payments/wallet/balance/
+ERROR 2025-10-30 00:24:06,463 views 28205 135174406792896 Payment initiation error: 'razorpay_payment_id'
+ERROR 2025-10-30 00:24:06,464 log 28205 135174406792896 Internal Server Error: /api/v1/payments/initiate/
+WARNING 2025-10-30 00:24:06,529 log 28205 135174406792896 Bad Request: /api/v1/payments/initiate/
+WARNING 2025-10-30 00:24:06,627 log 28205 135174406792896 Bad Request: /api/v1/payments/initiate/
+WARNING 2025-10-30 00:24:42,215 log 28205 135174397351616 Not Found: /api/v1/parking-spaces/15/
+WARNING 2025-10-30 00:25:41,995 log 28205 135174406792896 Not Found: /api/v1/payments/wallet/balance/
+WARNING 2025-10-30 00:25:42,060 log 28205 135174406792896 Not Found: /api/v1/payments/wallet/balance/
+WARNING 2025-10-30 00:25:42,140 log 28205 135174406792896 Not Found: /api/v1/payments/wallet/balance/
+WARNING 2025-10-30 00:26:56,151 log 28205 135174397351616 Not Found: /api/v1/payments/wallet/balance/
+WARNING 2025-10-30 00:26:56,193 log 28205 135174397351616 Not Found: /api/v1/payments/wallet/balance/
+WARNING 2025-10-30 00:26:56,271 log 28205 135174397351616 Not Found: /api/v1/payments/wallet/balance/
+ERROR 2025-10-30 00:27:06,478 views 28205 135174397351616 Payment initiation error: 'razorpay_payment_id'
+ERROR 2025-10-30 00:27:06,480 log 28205 135174397351616 Internal Server Error: /api/v1/payments/initiate/
+WARNING 2025-10-30 00:27:06,546 log 28205 135174397351616 Bad Request: /api/v1/payments/initiate/
+WARNING 2025-10-30 00:27:06,631 log 28205 135174397351616 Bad Request: /api/v1/payments/initiate/
+INFO 2025-10-30 00:29:08,207 autoreload 28205 135174647627904 /home/sri-balamurugan-indane-gas-servi/parking-application-backend/payments/views.py changed, reloading.
+INFO 2025-10-30 00:29:09,277 autoreload 32223 133529703510144 Watching for file changes with StatReloader
+WARNING 2025-10-30 00:29:15,085 log 32223 133529472071360 Bad Request: /api/v1/payments/initiate/
+WARNING 2025-10-30 00:29:15,156 log 32223 133529472071360 Bad Request: /api/v1/payments/initiate/
+WARNING 2025-10-30 00:29:15,230 log 32223 133529472071360 Bad Request: /api/v1/payments/initiate/
+WARNING 2025-10-30 00:30:09,488 log 32223 133529392379584 Not Found: /api/v1/parking-spaces/16/
+WARNING 2025-10-30 00:30:10,418 log 32223 133529392379584 Not Found: /api/v1/payments/wallet/balance/
+WARNING 2025-10-30 00:30:10,481 log 32223 133529392379584 Not Found: /api/v1/payments/wallet/balance/
+WARNING 2025-10-30 00:30:10,564 log 32223 133529392379584 Not Found: /api/v1/payments/wallet/balance/
+WARNING 2025-10-30 00:30:42,335 log 32223 133529472071360 Not Found: /api/v1/payments/wallet/balance/
+WARNING 2025-10-30 00:30:42,353 log 32223 133529472071360 Not Found: /api/v1/payments/wallet/balance/
+WARNING 2025-10-30 00:30:42,402 log 32223 133529472071360 Not Found: /api/v1/payments/wallet/balance/
+ERROR 2025-10-30 00:30:51,525 views 32223 133529472071360 Payment initiation error: 'razorpay_payment_id'
+ERROR 2025-10-30 00:30:51,527 log 32223 133529472071360 Internal Server Error: /api/v1/payments/initiate/
+ERROR 2025-10-30 00:30:51,589 views 32223 133529472071360 Payment initiation error: 'razorpay_payment_id'
+ERROR 2025-10-30 00:30:51,591 log 32223 133529472071360 Internal Server Error: /api/v1/payments/initiate/
+ERROR 2025-10-30 00:30:51,670 views 32223 133529472071360 Payment initiation error: 'razorpay_payment_id'
+ERROR 2025-10-30 00:30:51,671 log 32223 133529472071360 Internal Server Error: /api/v1/payments/initiate/
+INFO 2025-10-30 00:31:54,684 autoreload 32223 133529703510144 /home/sri-balamurugan-indane-gas-servi/parking-application-backend/payments/views.py changed, reloading.
+INFO 2025-10-30 00:31:55,503 autoreload 33882 131876733268096 Watching for file changes with StatReloader
+INFO 2025-10-30 00:32:14,875 autoreload 33882 131876733268096 /home/sri-balamurugan-indane-gas-servi/parking-application-backend/payments/views.py changed, reloading.
+INFO 2025-10-30 00:32:15,460 autoreload 34274 133137954152576 Watching for file changes with StatReloader
+INFO 2025-10-30 00:32:26,040 services 34274 133137723029184 COD payment created for booking 17: Due ₹28.0000 from piraikadir_s
+WARNING 2025-10-30 00:32:38,309 log 34274 133137713587904 Not Found: /api/v1/payments/wallet/balance/
+WARNING 2025-10-30 00:32:38,367 log 34274 133137713587904 Not Found: /api/v1/payments/wallet/balance/
+WARNING 2025-10-30 00:32:38,446 log 34274 133137713587904 Not Found: /api/v1/payments/wallet/balance/
+WARNING 2025-10-30 00:49:22,570 log 34274 133137334003392 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-30 00:50:31,439 log 34274 133137334003392 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-30 00:50:31,527 log 34274 133137334003392 Forbidden: /api/v1/bookings/my_bookings/
+WARNING 2025-10-30 01:01:13,753 log 34274 133137342396096 Forbidden: /api/v1/bookings/my_bookings/
+WARNING 2025-10-30 01:01:13,767 log 34274 133137342396096 Forbidden: /api/v1/bookings/my_bookings/
+WARNING 2025-10-30 01:09:06,899 log 34274 133137334003392 Bad Request: /api/v1/bookings/
+WARNING 2025-10-30 01:14:33,073 log 34274 133137334003392 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-30 01:14:33,101 log 34274 133137334003392 Forbidden: /api/v1/bookings/my_bookings/
+WARNING 2025-10-30 01:21:57,007 log 34274 133137334003392 Forbidden: /api/v1/bookings/my_bookings/
+WARNING 2025-10-30 01:24:45,601 log 34274 133137342396096 Forbidden: /api/v1/bookings/my_bookings/
+WARNING 2025-10-30 01:24:45,609 log 34274 133137334003392 Not Found: /api/v1/disputes/my-disputes/
+WARNING 2025-10-30 01:24:45,672 log 34274 133137334003392 Not Found: /api/v1/disputes/my-disputes/
+WARNING 2025-10-30 01:24:45,727 log 34274 133137334003392 Not Found: /api/v1/disputes/my-disputes/
+WARNING 2025-10-30 01:25:05,295 log 34274 133137334003392 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-30 01:25:35,314 log 34274 133137334003392 Not Found: /api/v1/disputes/my-disputes/
+WARNING 2025-10-30 01:25:35,376 log 34274 133137334003392 Not Found: /api/v1/disputes/my-disputes/
+WARNING 2025-10-30 01:25:35,468 log 34274 133137334003392 Not Found: /api/v1/disputes/my-disputes/
+WARNING 2025-10-30 01:25:46,250 log 34274 133137342396096 Not Found: /api/v1/disputes/my-disputes/
+WARNING 2025-10-30 01:25:46,322 log 34274 133137342396096 Not Found: /api/v1/disputes/my-disputes/
+WARNING 2025-10-30 01:25:46,414 log 34274 133137342396096 Not Found: /api/v1/disputes/my-disputes/
+WARNING 2025-10-30 01:26:16,703 log 34274 133137334003392 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-30 01:26:16,711 log 34274 133137334003392 Unauthorized: /api/v1/bookings/my_bookings/
+WARNING 2025-10-30 01:26:22,744 log 34274 133137334003392 Not Found: /api/v1/disputes/my-disputes/
+WARNING 2025-10-30 01:26:22,842 log 34274 133137334003392 Not Found: /api/v1/disputes/my-disputes/
+WARNING 2025-10-30 01:26:22,870 log 34274 133137334003392 Not Found: /api/v1/disputes/my-disputes/
+WARNING 2025-10-30 01:27:20,629 log 34274 133137334003392 Method Not Allowed: /api/v1/disputes/create/
+INFO 2025-10-30 01:29:19,519 autoreload 34274 133137954152576 /home/sri-balamurugan-indane-gas-servi/parking-application-backend/disputes/views.py changed, reloading.
+INFO 2025-10-30 01:29:20,252 autoreload 66731 133295336923264 Watching for file changes with StatReloader
+WARNING 2025-10-30 01:36:12,555 log 66731 133295029348032 Not Found: /api/v1/disputes/my-disputes/
+WARNING 2025-10-30 01:36:12,589 log 66731 133295029348032 Not Found: /api/v1/disputes/my-disputes/
+WARNING 2025-10-30 01:36:12,653 log 66731 133295029348032 Not Found: /api/v1/disputes/my-disputes/
+WARNING 2025-10-30 01:36:14,835 log 66731 133295029348032 Not Found: /api/v1/returns/my-returns/
+WARNING 2025-10-30 01:36:14,915 log 66731 133295029348032 Not Found: /api/v1/returns/my-returns/
+WARNING 2025-10-30 01:36:14,994 log 66731 133295029348032 Not Found: /api/v1/returns/my-returns/
+WARNING 2025-10-30 01:36:22,379 log 66731 133295029348032 Not Found: /api/v1/disputes/my-disputes/
+WARNING 2025-10-30 01:36:22,433 log 66731 133295029348032 Not Found: /api/v1/disputes/my-disputes/
+WARNING 2025-10-30 01:36:22,521 log 66731 133295029348032 Not Found: /api/v1/disputes/my-disputes/
+ERROR 2025-10-30 01:36:50,298 views 66731 133295029348032 Error raising dispute: null value in column "dispute_type" of relation "disputes_dispute" violates not-null constraint
+DETAIL:  Failing row contains (1, null, null, The space is very bad, [], open, null, null, , 2025-10-30 01:36:50.29567+00, 2025-10-30 01:36:50.295709+00, null, null, 17, 5, 4).
+
+WARNING 2025-10-30 01:36:50,299 log 66731 133295029348032 Bad Request: /api/v1/disputes/raise_dispute/

@@ -104,8 +104,21 @@ class PaymentViewSet(viewsets.ViewSet):
                 }, status=status.HTTP_200_OK)
             
             elif payment_method == 'cod':
-                payment.status = 'pending'
+                payment.status = 'initiated'
                 payment.save()
+
+                # Process payment
+                booking = payment.booking
+                CommissionService.process_cod_payment(
+                    booking,
+                    payment
+                )
+                
+                # Update booking status
+                booking.status = 'confirmed'
+                booking.parking_space.available_spaces -= 1
+                booking.save()
+                booking.parking_space.save()
                 
                 return Response({
                     'payment_id': payment.id,

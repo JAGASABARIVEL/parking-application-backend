@@ -144,6 +144,27 @@ class CommissionService:
         return settings
     
     @staticmethod
+    def check_owner_block_status(owner):
+        """Check and update owner block status"""
+        try:
+            account = OwnerCommissionAccount.objects.get(owner=owner)
+            settings = CommissionService.get_settings()
+            
+            # Check dues threshold
+            if account.pending_dues >= settings.block_dues_amount:
+                account.check_and_update_block_status()
+                return True
+            
+            return account.is_blocked
+        except OwnerCommissionAccount.DoesNotExist:
+            return False
+    
+    @staticmethod
+    def can_owner_receive_payment(owner):
+        """Check if owner can receive payments (not blocked)"""
+        return not CommissionService.check_owner_block_status(owner)
+    
+    @staticmethod
     def get_or_create_account(owner):
         """Get or create owner's commission account"""
         account, created = OwnerCommissionAccount.objects.get_or_create(owner=owner)
